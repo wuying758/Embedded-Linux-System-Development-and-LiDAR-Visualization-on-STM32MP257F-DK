@@ -1,0 +1,14 @@
+{
+  "state": "stopped",
+  "frames": 15,
+  "valid_points": 394,
+  "health": "正常",
+  "firmware": "1.02",
+  "child_stopped": true,
+  "verify_passed": true,
+  "first_run_frames": 12,
+  "restarted_frames": 12,
+  "radius_mm": 4000,
+  "minimum_quality": 10,
+  "screenshot_saved": true
+}

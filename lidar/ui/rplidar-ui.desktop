@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=C1 雷达扫描
+Comment=RPLIDAR C1 实时扫描图
+Exec=/usr/local/bin/rplidar-ui
+Icon=/usr/local/share/rplidar-ui/radar.png
+Terminal=false
+Categories=Education;Science;

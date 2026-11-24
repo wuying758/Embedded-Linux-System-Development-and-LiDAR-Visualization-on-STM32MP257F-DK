@@ -1,0 +1,13 @@
+#!/bin/sh
+# Run from the serial console or SSH using the board's existing Weston session.
+if [ -z "${WAYLAND_DISPLAY:-}" ]; then
+    for lidar_socket in /run/user/*/wayland-0 /home/weston/wayland-0; do
+        if [ -S "$lidar_socket" ]; then
+            export XDG_RUNTIME_DIR="${lidar_socket%/*}"
+            export WAYLAND_DISPLAY="${lidar_socket##*/}"
+            break
+        fi
+    done
+fi
+export GDK_BACKEND=wayland
+exec /usr/bin/python3 /usr/local/share/rplidar-ui/lidar_ui.py "$@"

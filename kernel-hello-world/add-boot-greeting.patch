@@ -1,0 +1,20 @@
+--- a/init/main.c
++++ b/init/main.c
+@@ -1020,6 +1020,7 @@
+ 	 * this. But we do want output early, in case something goes wrong.
+ 	 */
+ 	console_init();
++	pr_notice("Hello World from the start of Linux kernel!");
+ 	if (panic_later)
+ 		panic("Too many boot %s vars at `%s'", panic_later,
+ 		      panic_param);
+@@ -1564,6 +1565,9 @@
+ 
+ 	do_basic_setup();
+ 
++	pr_notice("Hello World from Linux kernel!\n");
++	msleep(10000);
++	pr_notice("Continue!");
+ 	kunit_run_all_tests();
+ 
+ 	wait_for_initramfs();

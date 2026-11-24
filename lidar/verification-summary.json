@@ -1,0 +1,14 @@
+{
+  "scan_duration_limit_seconds": 15,
+  "measurement_count": 61965,
+  "valid_measurement_count": 47478,
+  "invalid_measurement_count": 14487,
+  "scan_start_markers": 123,
+  "valid_distance_mm_min": 91.0,
+  "valid_distance_mm_max": 9134.0,
+  "angle_degrees_min": 0.0,
+  "angle_degrees_max": 359.98,
+  "sdk_version": "2.1.0",
+  "firmware_version": "1.02",
+  "health_status": 0
+}

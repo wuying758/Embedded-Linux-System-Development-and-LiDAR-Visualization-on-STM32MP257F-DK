@@ -32,8 +32,8 @@ generated kernel release.
 The basic Hello World application and its serial menu extension are maintained
 in separate directories, each with its own source file and Makefile:
 
-- `apps/hello-world/`: greeting and countdown.
-- `apps/serial-menu/`: interactive application and serial login configuration.
+- [`apps/hello-world/`](apps/hello-world/README.md): greeting and countdown.
+- [`apps/serial-menu/`](apps/serial-menu/README.md): interactive application and serial login configuration.
 
 The menu provides the following options:
 
@@ -173,6 +173,13 @@ stripped release executables and checksums, run:
 ```bash
 bash scripts/build-apps.sh
 ```
+
+### Install the Serial Menu
+
+Follow the [serial menu installation instructions](apps/serial-menu/README.md)
+to upload the executable, run it on the board, and optionally install the serial
+login hook. The guide includes the configuration commands, reboot checks, and
+steps to remove automatic startup.
 
 ### Launch the LiDAR GUI
 

@@ -13,10 +13,10 @@ for app in hello-world serial-menu; do
     install -m 0755 "$build_dir/hello_world_example" "$release_dir/hello_world_example"
     cp "$PROJECT_ROOT/apps/$app/hello_world_example.c" "$release_dir/"
     cp "$PROJECT_ROOT/apps/$app/Makefile" "$release_dir/"
+    cp "$PROJECT_ROOT/apps/$app/README.md" "$release_dir/"
     if [ "$app" = serial-menu ]; then
         cp "$PROJECT_ROOT/apps/$app/serial-menu.profile" "$release_dir/"
         cp "$PROJECT_ROOT/apps/$app/serial-getty-menu.conf" "$release_dir/"
     fi
-    (cd "$release_dir" && find . -maxdepth 1 -type f ! -name SHA256SUMS -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS)
     file "$release_dir/hello_world_example"
 done

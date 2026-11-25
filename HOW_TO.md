@@ -126,14 +126,11 @@ official sources: select the A35-TD tree and rebuild galcore.ko for the new kern
 Boot firmware uses the matched Starter Package binaries.
 
 ## How to use
-If you received the source archive, place it and its .sha256 file in the same
-directory, then extract and check it [HOST]:
+If you received the source archive, extract it on the host:
 
 ```bash
-sha256sum -c stm32mp257-source-v26.02.18.tar.gz.sha256
 tar -xzf stm32mp257-source-v26.02.18.tar.gz
 cd stm32mp257-source-v26.02.18
-sha256sum -c SHA256SUMS
 ```
 
 Use this extracted directory for all steps below. It includes the required BSP

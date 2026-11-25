@@ -168,7 +168,7 @@ file "$PROJECT_ROOT/apps/serial-menu/hello_world_example"
 
 Both executables must be reported as AArch64 ELF files. Each application has an
 executable named `hello_world_example` in its own build directory. To create
-stripped release executables and checksums, run:
+stripped release executables, run:
 
 ```bash
 bash scripts/build-apps.sh
@@ -202,10 +202,10 @@ Use the repository's Releases page to distribute the following files:
 
 | Asset | Contents |
 | --- | --- |
-| Kernel image package | Recompiled `Image`, compressed `Image.gz`, and checksums |
+| Kernel image package | Recompiled `Image`, compressed `Image.gz`, matching device tree, modules, and build configuration |
 | Hello World application package | Basic application executable, source, and Makefile |
 | Serial menu application package | Menu executable, source, Makefile, and login configuration |
-| Complete source package | Project sources, BSP source archives, configuration, documentation, and checksums |
+| Complete source package | Project sources, BSP source archives, configuration, and documentation |
 
 Keep the two application executables in separately named packages. The compiled
 serial menu is the extended version of the user-space application.
